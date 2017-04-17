@@ -33,6 +33,9 @@
     <ClCompile Include="Warrior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Smilin%27 Genius\Documents\CIS-17A\CIS-17A---Project-3-Starting-Point\Project 3 Starting Point\Project 3 Starting Point\Adventurer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Guild.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Warrior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Smilin%27 Genius\Documents\CIS-17A\CIS-17A---Project-3-Starting-Point\Project 3 Starting Point\Project 3 Starting Point\Adventurer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

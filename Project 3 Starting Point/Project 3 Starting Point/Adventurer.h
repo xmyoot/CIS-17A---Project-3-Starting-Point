@@ -2,12 +2,12 @@
 #include <string>
 class Adventurer
 {
-private:
+protected:
 	std::string _name;
 public:
-	Adventurer(std::string name) { _name = name; };
+	Adventurer(std::string name);
 	std::string GetName() const { return _name; }
-	virtual std::string Attack() {};
+	std::string virtual Attack() { return _name + "Take my fists!"; };
 	~Adventurer();
 };
 

@@ -6,6 +6,7 @@
 #include "Paladin.h"
 #include "Ranger.h"
 #include "Warrior.h"
+#include "Adventurer.h"
 
 class Guild
 {
@@ -22,17 +23,20 @@ public:
 	~Guild();
 
 	std::string GetName() const { return _name; }
+	
 	void AddMage(std::string name);
 	void AddPaladin(std::string name);
 	void AddRanger(std::string name);
 	void AddWarrior(std::string name);
+	
 
 	std::string GetInfo();
-
+	
 	std::string AttackWithMages();
 	std::string AttackWithPaladins();
 	std::string AttackWithRangers();
 	std::string AttackWithWarriors();
+	
 	std::string AttackWithAllAdventurers();
 };
 
