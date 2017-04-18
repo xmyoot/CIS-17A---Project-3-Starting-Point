@@ -32,6 +32,16 @@ void Guild::AddWarrior(std::string name)
 	_warriors.push_back(warrior);
 }
 
+void Guild::AddAdventurer(std::string name, int type)
+{
+	if (type == 1) { _allMages++; }
+	else if (type == 2) { _allRangers++; }
+	else if (type == 3) { _allPaladins++; }
+	else if (type == 4) { _allWarriors++; }
+	auto adventurer = std::make_shared<Adventurer>(name);
+	_allAdventurers.push_back(adventurer);
+}
+
 std::string Guild::GetInfo()
 {
 	std::string output = "Your guild has: \n";	
