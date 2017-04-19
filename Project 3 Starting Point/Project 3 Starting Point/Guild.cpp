@@ -41,9 +41,25 @@ void Guild::AddAdventurer(std::string name, int type)
 std::string Guild::GetInfo()
 {
 	std::string output = "Your guild has: \n";	
+	int mages, rangers, paladins, warriors =0;
 	for (auto s : _allAdventurers) {
-		output += (s->GetName() + std::to_string(s->GetType()));
+		if (s->GetType() == 1) {
+			mages++;
+		}
+		if (s->GetType() == 2) {
+			rangers++;
+		}
+		if (s->GetType() == 3) {
+			paladins++;
+		}
+		if (s->GetType() == 4) {
+			warriors++;
+		}
 	}
+	output += (std::to_string(mages) + " mages!\n");
+	output += (std::to_string(mages) + " rangers!\n");
+	output += (std::to_string(mages) + " paladins!\n");
+	output += (std::to_string(mages) + " warriors!\n");
 	/*output += _mages.size()		> 0 ? std::to_string(_mages.size()) + " mages\n" : "No mages!\n";
 	output += _rangers.size()	> 0 ? std::to_string(_rangers.size()) + " rangers\n" : "No rangers!\n";
 	output += _warriors.size()	> 0 ? std::to_string(_warriors.size()) + " warriors\n" : "No warriors!\n";
