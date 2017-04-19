@@ -6,7 +6,7 @@ using namespace std;
 
 void DisplayGuildInfo(const shared_ptr<Guild> guild);
 void AddAdventurer(const shared_ptr<Guild> guild);
-//void Attack(const shared_ptr<Guild> guild);
+void Attack(const shared_ptr<Guild> guild);
 
 int main() 
 {
@@ -29,7 +29,7 @@ int main()
 		{
 		case 1: DisplayGuildInfo(guild); break;
 		case 2: AddAdventurer(guild); break;
-		/*case 3: Attack(guild); break;*/
+		case 3: Attack(guild); break;
 		default: return 0; break;
 		}
 	}
@@ -72,28 +72,28 @@ void AddAdventurer(const shared_ptr<Guild> guild)
 	system("pause");
 }
 
-//void Attack(const shared_ptr<Guild> guild)
-//{
-//	system("cls");
-//
-//	cout << "1) Attack with mages" << endl;
-//	cout << "2) Attack with rangers" << endl;
-//	cout << "3) Attack with warriors" << endl;
-//	cout << "4) Attack with paladins" << endl;
-//	cout << "5) Attack with everything!" << endl;
-//
-//	/*int choice = -1;
-//	cin >> choice;
-//
-//	switch (choice)
-//	{
-//	case 1: cout << guild->AttackWithMages() << endl; break;
-//	case 2: cout << guild->AttackWithRangers() << endl; break;
-//	case 3: cout << guild->AttackWithWarriors() << endl; break;
-//	case 4: cout << guild->AttackWithPaladins() << endl; break;
-//	case 5: cout << guild->AttackWithAllAdventurers() << endl; break;
-//	default: cout << "You run away like a coward" << endl; break;
-//	}
-//	system("pause");*/
-//	
-//}
+void Attack(const shared_ptr<Guild> guild)
+{
+	system("cls");
+
+	cout << "1) attack with mages" << endl;
+	cout << "2) attack with rangers" << endl;
+	cout << "3) attack with warriors" << endl;
+	cout << "4) attack with paladins" << endl;
+	cout << "5) attack with everything!" << endl;
+
+	int choice = -1;
+	cin >> choice;
+
+	switch (choice)
+	{
+	case 1: cout << guild->AttackWithMages() << endl; break;
+	case 2: cout << guild->AttackWithRangers() << endl; break;
+	case 3: cout << guild->AttackWithWarriors() << endl; break;
+	case 4: cout << guild->AttackWithPaladins() << endl; break;
+	case 5: cout << guild->AttackWithAllAdventurers() << endl; break;
+	default: cout << "you run away like a coward" << endl; break;
+	}
+	system("pause");
+	
+}

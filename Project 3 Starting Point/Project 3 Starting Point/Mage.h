@@ -8,6 +8,6 @@ public:
 	Mage(std::string name, int);
 	~Mage();
 
-	std::string Attack() { return _name + " casts magic missle at the darkness!"; }	
+	std::string Attack() { return " casts magic missle at the darkness! \n"; }	
 };
 

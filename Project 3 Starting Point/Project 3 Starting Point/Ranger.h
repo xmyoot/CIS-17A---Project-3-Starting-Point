@@ -8,6 +8,6 @@ public:
 	Ranger(std::string name, int);
 	~Ranger();
 
-	std::string Attack() { return _name + " shoots arrows at his enemies!  PEW PEW PEW"; }
+	std::string Attack() { return " shoots arrows at his enemies!  PEW PEW PEW \n"; }
 };
 
